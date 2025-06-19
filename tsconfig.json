@@ -1,11 +1,14 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
-    "module": "ESNext",
-    "moduleResolution": "node",
+    "target": "ES2024",
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "experimentalDecorators": true,
     "esModuleInterop": true,
+    "module": "NodeNext",
+    "moduleResolution": "nodenext",
     "allowSyntheticDefaultImports": true,
-    "typeRoots": ["./typings", "./node_modules/@types"],
+    "typeRoots": ["typings"],
     "baseUrl": "./",
     "paths": {
       "@interfaces/*": ["interface/*"],
@@ -13,9 +16,5 @@
       "@middlewares/*": ["middlewares/*"]
     }
   },
-  "ts-node": {
-    "esm": true
-  },
-  "include": ["**/*.ts", "typings/**/*.d.ts"],
-  "exclude": ["node_modules", "dist"]
+  "include": ["**/*"]
 }
