@@ -1,4 +1,4 @@
-import { addAliases } from 'module-alias';
+const { addAliases } = require('module-alias');
 addAliases({
   '@root': __dirname,
   '@interfaces': `${__dirname}/interface`,
