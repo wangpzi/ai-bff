@@ -1,14 +1,21 @@
 {
   "compilerOptions": {
-    "target": "ES2024",
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "lib": ["ES2022"],
+    "outDir": "./dist",
+    "rootDir": "./",
+    "strict": true,
     "noImplicitAny": true,
     "noImplicitThis": true,
-    "experimentalDecorators": true,
     "esModuleInterop": true,
-    "module": "NodeNext",
-    // "moduleResolution": "NodeNext",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
     "allowSyntheticDefaultImports": true,
-    "typeRoots": ["typings"],
+    "typeRoots": ["typings", "node_modules/@types"],
     "baseUrl": "./",
     "paths": {
       "@interfaces/*": ["interface/*"],
@@ -16,5 +23,6 @@
       "@middlewares/*": ["middlewares/*"]
     }
   },
-  "include": ["**/*"]
+  "include": ["**/*"],
+  "exclude": ["node_modules", "dist"]
 }
