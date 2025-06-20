@@ -6,7 +6,7 @@
     "experimentalDecorators": true,
     "esModuleInterop": true,
     "module": "NodeNext",
-    "moduleResolution": "NodeNext",
+    // "moduleResolution": "NodeNext",
     "allowSyntheticDefaultImports": true,
     "typeRoots": ["typings"],
     "baseUrl": "./",
