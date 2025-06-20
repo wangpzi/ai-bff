@@ -6,8 +6,22 @@ class ApiService implements IApi {
   getInfo() {
     return new Promise<IData>((resolve) => {
       resolve({
-        item: 'test',
-        result: [1, 2, 3, 'a', 'b', 'c']
+        item: '返回成功',
+        result: [
+          {
+            name: "JavaScript",
+            level: "三颗星"
+          },
+          ,
+          {
+            name: "react",
+            level: "四颗星"
+          },
+          {
+            name: "node",
+            level: "五颗星"
+          }
+        ]
       });
     });
   }
