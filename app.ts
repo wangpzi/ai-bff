@@ -48,6 +48,6 @@ app.context.render = co.wrap(
 app.use(historyApiFallback({ index: '/', whiteList: ['/api'] }));
 // 所有的路由全都生效
 app.use(loadControllers(`${__dirname}/routers/*.{js,ts}`));
-app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
+app.listen(port, '0.0.0.0', () => {
+  console.log(`Server is running on http://0.0.0.0:${port}`);
 })
